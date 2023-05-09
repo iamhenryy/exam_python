@@ -3,7 +3,7 @@
 ### Câu 1
 `.split()` là để tách ra tạo thành danh sách, phần trong dấu `()` là dấu hiệu nhận biết để tách 
 
-`.join()` là để gắn thêm phần tử bất kì vào danh sách `",".join(s)
+`.join()` là để gắn thêm phần tử bất kì vào danh sách `",".join(s)`
 
 
 **VD** 
@@ -12,7 +12,7 @@
 thì ta dùng cú pháp `s = s.split(" ")` *vì giữa các chữ có khoảng cách(" ")*
 
 
-Để ghép xâu thành 'ga,vit,cho,lon,ngua,ca' thì chỉ cần thêm "," vào danh sách `s` vừa tạo, ta dùng cú pháp `",".join(s)`
+Để ghép xâu thành `'ga,vit,cho,lon,ngua,ca'` thì chỉ cần thêm "," vào danh sách `s` vừa tạo, ta dùng cú pháp `",".join(s)`
 
 ___
 ### Câu 2
@@ -38,6 +38,7 @@ def uoc():
 
 #### 2. Viết Phương Trình Tìm Nghiệm Phương Trình   $ax^2 + bx + c = 0 (a \neq 0)$
 Như ta có cách giải từ trước, thông qua $\Delta$. Nếu
+
 $\Delta > 0$ : Phương trình có 2 nghiệm
 - $x1 = \frac{-b + \sqrt(\Delta)}{2a}$
 - $x2 = \frac{-b - \sqrt(\Delta)}{2a}$
@@ -69,8 +70,8 @@ def ptbh():
 
 #### 3. Viết Chương Trình Tính Giai Thừa Của 'n'
 
-Như được biết, giai thừa của 1 số n thì sẽ $n! = n*(n-1)*(n-2)*(n-3)*...*2*1$
-Tức là giai thừa một số sẽ là $n! = 1*2*3*...*(n)$
+Như được biết, giai thừa của 1 số n thì sẽ `n! = n(n-1)(n-2)(n-3)*...*2*1`
+Tức là giai thừa một số sẽ là `n! = 1*2*3*...*n`
 
 Ta có, đoạn code như sau:
 *Nếu đề bảo 'n' nhập từ bàn phím
