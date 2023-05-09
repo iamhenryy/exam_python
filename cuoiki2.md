@@ -14,7 +14,7 @@ thì ta dùng cú pháp `s = s.split(" ")` *vì giữa các chữ có khoảng c
 
 Để ghép xâu thành 'ga,vit,cho,lon,ngua,ca' thì chỉ cần thêm "," vào danh sách `s` vừa tạo, ta dùng cú pháp `",".join(s)`
 
-
+___
 ### Câu 2
 Hiểu rõ cách dùng hàm `def` là được!
 ___
