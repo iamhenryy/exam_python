@@ -74,7 +74,7 @@ Như được biết, giai thừa của 1 số n thì sẽ `n! = n(n-1)(n-2)(n-3
 Tức là giai thừa một số sẽ là `n! = 1*2*3*...*n`
 
 Ta có, đoạn code như sau:
-*Nếu đề bảo 'n' nhập từ bàn phím
+*Nếu đề bảo 'n' nhập từ bàn phím*
 ```
 def giaithua():
     n = int(input("Nhập số 'n' cần tính giai thừa: "))
@@ -84,7 +84,7 @@ def giaithua():
     print(f'{n}! = {t}')
 ```
 
-*Nếu đề không bảo n nhập từ bàn phím
+*Nếu đề không bảo n nhập từ bàn phím*
 ```
 def giaithua(n):
     t = 1
@@ -129,11 +129,11 @@ def UCLN(m,n):
 
 ```
 def tong():
-    n = int(input("Nhập so phan tu trong danh sach: "))
+    n = int(input("Nhap so phan tu trong danh sach: "))
     A = []
     s = 0
     for i in range(n):
-        A.append(float(input(f"Nhap phan tu thu {i}: ")))
+        A.append(float(input(f"Nhap phan tu thu {i+1}: ")))
     for h in A:
         if h%2 == 0: # Nếu đề tìm số lẻ thì đổi thành "h%2 != 0"
             s = s + h
@@ -143,15 +143,42 @@ def tong():
 ##### b. Sau Đó Đếm Phần Tử (Chẵn/Lẻ)
 ```
 def dem():
-    n = int(input("Nhập so phan tu trong danh sach: "))
+    n = int(input("Nhap so phan tu trong danh sach: "))
     A = []
     c = 0
     for i in range(n):
-        A.append(float(input(f"Nhap phan tu thu {i}: ")))
+        A.append(float(input(f"Nhap phan tu thu {i+1}: ")))
     for h in A:
         if h%2 == 0: # Nếu đề tìm số lẻ thì đổi thành "h%2 != 0"
             c = c + 1
     # Đổi dòng in ra sao cho phù hợp với đề bài
-    print(f"So luong so chan trong day so la {c}")
+    print(f"So luong so chan trong day so la: {c}")
 ```
 
+##### c. Tổng Phần Tử 
+```
+def tong():
+    n = int(input("Nhap so phan tu trong danh sach: "))
+    A = []
+    s = 0
+    for i in range(n):
+        A.append(float(input(f"Nhap phan tu thu {i+1}: ")))
+    for h in A:
+        s += h
+    print(f"Tong cac phan tu trong danh sach la: {s}")
+```
+
+##### d. Đếm Phần Tử Chia Hết Cho 2,3,5
+```
+def dem():
+    n = int(input("Nhap so phan tu trong danh sach: "))
+    A = []
+    c = 0
+    for i in range(n):
+        A.append(float(input(f"Nhap phan tu thu {i+1}: ")))
+    for h in A:
+        if h%5 == 0: # nếu đề là 1 số x thì đổi thành "if h%x == 0"
+            c = c + 1
+    # Đổi dòng in ra sao cho phù hợp với đề bài
+    print(f"So luong so chia het cho 3 trong danh sach la: {c}")
+```    
