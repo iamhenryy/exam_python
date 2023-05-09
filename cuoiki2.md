@@ -114,6 +114,16 @@ def UCLN():
   print("UCLN la: ", m)
 
 ```  
+**NẾU ĐỀ KHÔNG BẢO NHẬP TỪ BÀN PHÍM**
+```
+def UCLN(m,n):
+  while m != n:
+    if m > n: 
+      m = m - n
+    else:
+      n = n - m
+  print("UCLN la: ", m)
+```
 #### 5. Viết Chương Trình Nhập Danh Sách Từ Bàn Phím
 ##### a. Sau Đó Tính Tổng Phần Tử (Chẵn/Lẻ)
 
